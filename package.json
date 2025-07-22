@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watch",
     "dev": "nodemon server.js",
     "start": "node server"
   },
@@ -15,6 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
+    "jest": "^30.0.5",
     "nodemon": "^3.1.10"
   }
 }
