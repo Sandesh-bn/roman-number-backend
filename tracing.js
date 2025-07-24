@@ -3,6 +3,7 @@ const { getNodeAutoInstrumentations } = require('@opentelemetry/auto-instrumenta
 const { ConsoleSpanExporter } = require('@opentelemetry/sdk-trace-base');
 const { SimpleSpanProcessor } = require('@opentelemetry/sdk-trace-base');
 
+// traces for backend tasks
 const sdk = new NodeSDK({
   traceExporter: new ConsoleSpanExporter(),
   spanProcessor: new SimpleSpanProcessor(new ConsoleSpanExporter()),

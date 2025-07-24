@@ -1,6 +1,7 @@
 const { getRomanNumeral } = require('../utils/romanNumeralConversion');
 
-describe('romanNumeralConversaion', () => {
+// test covering roman numeral method for all cases
+describe('romanNumeralConversion', () => {
   test('converts 0 to empty string', () => {
     expect(getRomanNumeral(0)).toBe('');
   });

@@ -1,6 +1,7 @@
 const request = require('supertest');
 const app = require('../server');
 
+// test covering roman numeral api method for all cases
 describe('GET /romannumeral', () => {
   test('should return 200 and valid roman numeral for input 2023', async () => {
     const res = await request(app).get('/romannumeral?query=2023');
