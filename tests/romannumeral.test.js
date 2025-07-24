@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../server'); // path to your express app
+const app = require('../server');
 
 describe('GET /romannumeral', () => {
   test('should return 200 and valid roman numeral for input 2023', async () => {
