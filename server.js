@@ -25,3 +25,5 @@ app.listen(process.env.PORT, () => {
 })
 
 module.exports = app;
+
+console.log("Docker test backend")
